@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %} Đăng nhập tài khoản {% endblock %}
+
+{% block body %}
+<h1 class="foxv-modal__title">
+    <span>ĐĂNG NHẬP TÀI KHOẢN</span>
+</h1>
+<div class="foxv-modal__container">
+<!-- Login.Close -->
+    <div class="foxv-modal__close foxv-icon-button">
+        <span class="foxv-icon"><img src="/app/static/img/foxv_tools/foxv_icon_exit.svg" alt=""></span>
+        <span class="foxv-icon"><img src="/app/static/img/foxv_tools/foxv_icon_exit.svg" alt=""></span>
+    </div>
+<!-- Login.Contents -->
+    <div class="foxv-modal__contents">
+        <div class="foxv-header-login-form">
+            <section class="foxv-header-login-form__sign-in">
+                <div class="foxv-form-field">
+                    <h2>Xin vui lòng đăng nhập tài khoản!</h2>
+                </div>
+                <form id="foxv-header-login-form__sign-in__form" method="POST">
+                    <div class="foxv-form-field">
+                        <label for="foxv-header-login-form__sign-in__form__email" class="foxv-field-label">Login*</label>
+                        <input id="foxv-header-login-form__sign-in__form__email" aria-invalid="false" name="foxv-header-login-form__sign-in__form__email" dir="auto" aria-describedby="foxv-header-login-form__globalErrorsMessage" required="required" type="email" class="form-control form-control-user">
+                    </div>
+                    <div class="foxv-form-field">
+                        <label for="foxv-header-login-form__sign-in__form__password" class="foxv-field-label foxv-input-password__label">Mật khẩu*</label>
+                        <input name="foxv-header-login-form__sign-in__form__password" aria-describedby="foxv-header-login-form__globalErrorsMessage" autocomplete="off" required="required" dir="auto" autocorrect="off" autocapitalize="off" aria-invalid="false" type="password" class="form-control form-control-user">
+                    </div>
+                        <div class="foxv-form-field">
+                        <a href="">Quên mật khẩu</a>
+                    </div>
+                    
+                    <div class="foxv-form-field">
+                        <button type="button" class="foxv-button-fluid">Đăng nhập</button>
+                    </div>
+                </form>
+            </section>
+            <div class="foxv-form-divided"></div>
+            <section class="foxv-header-login-form__create-account">
+                <div class="foxv-form-field">
+                    <h2>Nếu bạn chưa có tài khoản</h2>
+                    <p class="">Tận hưởng các lợi ích bổ sung và trải nghiệm phong phú hơn bằng cách tạo tài khoản cá nhân.</p>
+                </div>
+                <div class="foxv-form-field">
+                    <button onclick="window.location.href='/templates/registration.html'"  type="button" class="foxv-button-fluid">Tạo tài khoản Foxv</button>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}
