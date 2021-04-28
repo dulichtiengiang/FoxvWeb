@@ -1,3 +1,4 @@
+
 class Config(object): 
     # Default
     TESTING=False
