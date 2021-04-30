@@ -1,5 +1,7 @@
 from flask import Flask, current_app, request
 from config import config
+from flask import Blueprint
+
 
 
 def create_app(app_config='development'):
@@ -8,8 +10,9 @@ def create_app(app_config='development'):
 
     app.config.from_object(config[app_config])
 
-    from app.main.main import main as main_bp
+    from app.main.main import main
+    app.register_blueprint(main)
 
-    app.register_blueprint(main_bp)
-
+    from app.auth.auth import auth
+    app.register_blueprint(auth)
     return app

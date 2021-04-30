@@ -1,0 +1,429 @@
+{% extends "layout.html" %}
+{% block title %}Mua Online Quần Áo Giá Rẻ{% endblock %}
+{% block body %} 
+<!-- LOGIN -->
+<div class="foxv-backdrop foxv-modal__backdrop" tabindex="-1"></div>
+<div class="foxv-modal__sidepanel foxv-animation-panel">
+    <h1 class="foxv-modal__title">
+        <span>ĐĂNG NHẬP TÀI KHOẢN</span>
+    </h1>
+    <div class="foxv-modal__container">
+<!-- Login.Close -->
+        <div class="foxv-modal__close foxv-icon-button">
+            <span class="foxv-icon"><img src="/app/static/img/foxv_tools/foxv_icon_exit.svg" alt=""></span>
+            <span class="foxv-icon"><img src="/app/static/img/foxv_tools/foxv_icon_exit.svg" alt=""></span>
+        </div>
+<!-- Login.Contents -->
+        <div class="foxv-modal__contents">
+            <div class="foxv-header-login-form">
+                <section class="foxv-header-login-form__sign-in">
+                    <div class="foxv-form-field">
+                        <h2>Xin vui lòng đăng nhập tài khoản!</h2>
+                    </div>
+                    <form id="foxv-header-login-form__sign-in__form" method="POST">
+                        <div class="foxv-form-field">
+                            <label for="foxv-header-login-form__sign-in__form__email" class="foxv-field-label">Login*</label>
+                            <input id="foxv-header-login-form__sign-in__form__email" aria-invalid="false" name="foxv-header-login-form__sign-in__form__email" dir="auto" aria-describedby="foxv-header-login-form__globalErrorsMessage" required="required" type="email" class="form-control form-control-user">
+                        </div>
+                        <div class="foxv-form-field">
+                            <label for="foxv-header-login-form__sign-in__form__password" class="foxv-field-label foxv-input-password__label">Mật khẩu*</label>
+                            <input name="foxv-header-login-form__sign-in__form__password" aria-describedby="foxv-header-login-form__globalErrorsMessage" autocomplete="off" required="required" dir="auto" autocorrect="off" autocapitalize="off" aria-invalid="false" type="password" class="form-control form-control-user">
+                        </div>
+                            <div class="foxv-form-field">
+                            <a href="">Quên mật khẩu</a>
+                        </div>
+                        
+                        <div class="foxv-form-field">
+                            <button type="button" class="foxv-button-fluid">Đăng nhập</button>
+                        </div>
+                    </form>
+                </section>
+                <div class="foxv-form-divided"></div>
+                <section class="foxv-header-login-form__create-account">
+                    <div class="foxv-form-field">
+                        <h2>Nếu bạn chưa có tài khoản</h2>
+                        <p class="">Tận hưởng các lợi ích bổ sung và trải nghiệm phong phú hơn bằng cách tạo tài khoản cá nhân.</p>
+                    </div>
+                    <div class="foxv-form-field">
+                        <button onclick="window.location.href='/templates/registration.html'"  type="button" class="foxv-button-fluid">Tạo tài khoản Foxv</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- !LOGIN -->
+<!-- SLIDER -->
+<section>
+<div class="cover-items-slider">
+    <div class="container">
+        <div class="slider-container">
+            <div class="slide-block">
+                
+                <div id="slide-1" class="slide active">
+                    <img src="/app/static/img/slide-01.webp" alt="">
+                </div>
+                <div id="slide-2" class="slide">
+                    <img src="/app/static/img/slide-02.webp" alt="">
+                </div>
+                <div id="slide-3" class="slide">
+                    <img src="/app/static/img/slide-03.webp" alt="">
+                </div>
+                <div id="slide-4" class="slide">
+                    <img src="/app/static/img/slide-04.png" alt="">
+                </div>
+                
+            </div>
+            <div class="foxv-slick-slider foxv-slick-initialized">
+                <div class="controls">
+                    <span id="btn-prev"><i class="fas fa-chevron-circle-left"></i></span>
+                    <span id="btn-next"><i class="fas fa-chevron-circle-right"></i></span>
+                </div>
+                <div class="foxv-slick-list">
+                    <div class="foxv-slick-buttom">
+                        <!--4 cir-btn-->
+                        <ul class="foxv-slick-dots">
+                            <li id="dot-1" class="dot active"></li>
+                            <li id="dot-2" class="dot"></li>
+                            <li id="dot-3" class="dot"></li>
+                            <li id="dot-4" class="dot"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foxv-slick-bottom">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- !BANNER-MAIN-->
+</section>
+<!-- /////////////////////////////////////////////
+//CONTENT-GRID////////////////////////////////////
+////////////////////////////////////////////// -->
+<!-- key4 -->
+
+<div class="content-grid">
+    <div class="containe grid-box">
+        <div class="row ">
+        </div>
+    </div><!--containe grid-box-->
+</div><!-- !CONTENT-GRID -->
+
+<!-- /////////////////////////////////////////////
+//Products-selection////////////////////////////////////
+////////////////////////////////////////////// -->
+<!-- key5 -->
+<section>
+    <div class="foxv-tab-pane-product">
+        <div class="container">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link foxv-a foxv-h3 active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Sản phẩm mới</a>
+                    <a class="nav-item nav-link foxv-a foxv-h3" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Sản phẩm sale</a>
+                    <a class="nav-item nav-link foxv-a foxv-h3" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Đồ trẻ em</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+            <!-- Tab-Pane-1 -->
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="foxv-tab-pane">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Product-New-01 -->
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="foxv-product-item">
+                                        <div class="foxv-product-image foxv-product-new-image">
+                                            <a href="##link-product" target="_self">
+                                                <img class="img-fluid" src="/app/static/img/foxv-product-295x295-01.jpg" alt="ĐẦM NHUNG CAO CẤP D31052">
+                                            </a>
+                                        </div>
+                                        <div class="foxv-product-des">
+                                            <div class="foxv-name foxv-product-new-name">
+                                                <span class="foxv-span-product foxv-span-product-new-name">product-new-name-01</span>
+                                            </div>
+                                            <div class="foxv-price-new foxv-product-new-price-new">
+                                                <span class="foxv-span-product foxv-span-product-new-price-new">Giá: product-new-price-new-01</span>
+                                            </div>
+                                            <div class="foxv-price-old foxv-product-new-price-old">
+                                                <span class="foxv-span-product foxv-span-product-new-price-old">product-new-price-old-01</span>
+                                            </div>
+                                        </div>
+                                        <!-- <img src="/app/static/img/foxv-product-295x295-01.jpg" alt=""> -->
+                                    </div>
+                                </div>
+                                <!-- Product-New-02 -->
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="foxv-product-item">
+                                        <div class="foxv-product-image foxv-product-new-image">
+                                            <a href="##link-product" target="_self">
+                                                <img class="img-fluid" src="/app/static/img/foxv-product-295x295-01.jpg" alt="ĐẦM NHUNG CAO CẤP D31052">
+                                            </a>
+                                        </div>
+                                        <div class="foxv-product-des">
+                                            <div class="foxv-name foxv-product-new-name">
+                                                <span class="foxv-span-product foxv-span-product-new-name">product-new-name-01</span>
+                                            </div>
+                                            <div class="foxv-price-new foxv-product-new-price-new">
+                                                <span class="foxv-span-product foxv-span-product-new-price-new">Giá: product-new-price-new-01</span>
+                                            </div>
+                                            <div class="foxv-price-old foxv-product-new-price-old">
+                                                <span class="foxv-span-product foxv-span-product-new-price-old">product-new-price-old-01</span>
+                                            </div>
+                                        </div>
+                                        <!-- <img src="/app/static/img/foxv-product-295x295-01.jpg" alt=""> -->
+                                    </div>
+                                </div>
+                                <!-- Product-New-03 -->
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="foxv-product-item">
+                                        <div class="foxv-product-image foxv-product-new-image">
+                                            <a href="##link-product" target="_self">
+                                                <img class="img-fluid" src="/app/static/img/foxv-product-295x295-01.jpg" alt="ĐẦM NHUNG CAO CẤP D31052">
+                                            </a>
+                                        </div>
+                                        <div class="foxv-product-des">
+                                            <div class="foxv-name foxv-product-new-name">
+                                                <span class="foxv-span-product foxv-span-product-new-name">product-new-name-01</span>
+                                            </div>
+                                            <div class="foxv-price-new foxv-product-new-price-new">
+                                                <span class="foxv-span-product foxv-span-product-new-price-new">Giá: product-new-price-new-01</span>
+                                            </div>
+                                            <div class="foxv-price-old foxv-product-new-price-old">
+                                                <span class="foxv-span-product foxv-span-product-new-price-old">product-new-price-old-01</span>
+                                            </div>
+                                        </div>
+                                        <!-- <img src="/app/static/img/foxv-product-295x295-01.jpg" alt=""> -->
+                                    </div>
+                                </div>
+                                <!-- Product-New-04 -->
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="foxv-product-item">
+                                        <div class="foxv-product-image foxv-product-new-image">
+                                            <a href="##link-product" target="_self">
+                                                <img class="img-fluid" src="/app/static/img/foxv-product-295x295-01.jpg" alt="ĐẦM NHUNG CAO CẤP D31052">
+                                            </a>
+                                        </div>
+                                        <div class="foxv-product-des">
+                                            <div class="foxv-name foxv-product-new-name">
+                                                <span class="foxv-span-product foxv-span-product-new-name">product-new-name-01</span>
+                                            </div>
+                                            <div class="foxv-price-new foxv-product-new-price-new">
+                                                <span class="foxv-span-product foxv-span-product-new-price-new">Giá: product-new-price-new-01</span>
+                                            </div>
+                                            <div class="foxv-price-old foxv-product-new-price-old">
+                                                <span class="foxv-span-product foxv-span-product-new-price-old">product-new-price-old-01</span>
+                                            </div>
+                                        </div>
+                                        <!-- <img src="/app/static/img/foxv-product-295x295-01.jpg" alt=""> -->
+                                    </div>
+                                </div>
+                                <!-- Product-New-05 -->
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="foxv-product-item">
+                                        <div class="foxv-product-image foxv-product-new-image">
+                                            <a href="##link-product" target="_self">
+                                                <img class="img-fluid" src="/app/static/img/foxv-product-295x295-01.jpg" alt="ĐẦM NHUNG CAO CẤP D31052">
+                                            </a>
+                                        </div>
+                                        <div class="foxv-product-des">
+                                            <div class="foxv-name foxv-product-new-name">
+                                                <span class="foxv-span-product foxv-span-product-new-name">product-new-name-01</span>
+                                            </div>
+                                            <div class="foxv-price-new foxv-product-new-price-new">
+                                                <span class="foxv-span-product foxv-span-product-new-price-new">Giá: product-new-price-new-01</span>
+                                            </div>
+                                            <div class="foxv-price-old foxv-product-new-price-old">
+                                                <span class="foxv-span-product foxv-span-product-new-price-old">product-new-price-old-01</span>
+                                            </div>
+                                        </div>
+                                        <!-- <img src="/app/static/img/foxv-product-295x295-01.jpg" alt=""> -->
+                                    </div>
+                                </div>
+                                <!-- Product-New-06 -->
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="foxv-product-item">
+                                        <div class="foxv-product-image foxv-product-new-image">
+                                            <a href="##link-product" target="_self">
+                                                <img class="img-fluid" src="/app/static/img/foxv-product-295x295-01.jpg" alt="ĐẦM NHUNG CAO CẤP D31052">
+                                            </a>
+                                        </div>
+                                        <div class="foxv-product-des">
+                                            <div class="foxv-name foxv-product-new-name">
+                                                <span class="foxv-span-product foxv-span-product-new-name">product-new-name-01</span>
+                                            </div>
+                                            <div class="foxv-price-new foxv-product-new-price-new">
+                                                <span class="foxv-span-product foxv-span-product-new-price-new">Giá: product-new-price-new-01</span>
+                                            </div>
+                                            <div class="foxv-price-old foxv-product-new-price-old">
+                                                <span class="foxv-span-product foxv-span-product-new-price-old">product-new-price-old-01</span>
+                                            </div>
+                                        </div>
+                                        <!-- <img src="/app/static/img/foxv-product-295x295-01.jpg" alt=""> -->
+                                    </div>
+                                </div>
+                                <!-- Product-New-07 -->
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="foxv-product-item">
+                                        <div class="foxv-product-image foxv-product-new-image">
+                                            <a href="##link-product" target="_self">
+                                                <img class="img-fluid" src="/app/static/img/foxv-product-295x295-01.jpg" alt="ĐẦM NHUNG CAO CẤP D31052">
+                                            </a>
+                                        </div>
+                                        <div class="foxv-product-des">
+                                            <div class="foxv-name foxv-product-new-name">
+                                                <span class="foxv-span-product foxv-span-product-new-name">product-new-name-01</span>
+                                            </div>
+                                            <div class="foxv-price-new foxv-product-new-price-new">
+                                                <span class="foxv-span-product foxv-span-product-new-price-new">Giá: product-new-price-new-01</span>
+                                            </div>
+                                            <div class="foxv-price-old foxv-product-new-price-old">
+                                                <span class="foxv-span-product foxv-span-product-new-price-old">product-new-price-old-01</span>
+                                            </div>
+                                        </div>
+                                        <!-- <img src="/app/static/img/foxv-product-295x295-01.jpg" alt=""> -->
+                                    </div>
+                                </div>
+                                <!-- Product-New-08 -->
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="foxv-product-item">
+                                        <div class="foxv-product-image foxv-product-new-image">
+                                            <a href="##link-product" target="_self">
+                                                <img class="img-fluid" src="/app/static/img/foxv-product-295x295-01.jpg" alt="ĐẦM NHUNG CAO CẤP D31052">
+                                            </a>
+                                        </div>
+                                        <div class="foxv-product-des">
+                                            <div class="foxv-name foxv-product-new-name">
+                                                <span class="foxv-span-product foxv-span-product-new-name">product-new-name-01</span>
+                                            </div>
+                                            <div class="foxv-price-new foxv-product-new-price-new">
+                                                <span class="foxv-span-product foxv-span-product-new-price-new">Giá: product-new-price-new-01</span>
+                                            </div>
+                                            <div class="foxv-price-old foxv-product-new-price-old">
+                                                <span class="foxv-span-product foxv-span-product-new-price-old">product-new-price-old-01</span>
+                                            </div>
+                                        </div>
+                                        <!-- <img src="/app/static/img/foxv-product-295x295-01.jpg" alt=""> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- foxv-tab-pane -->
+                </div>
+                <!-- Tab-Pane-2 -->
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                sadfasfasdfsadf.</div>
+                <!-- Tab-Pane-3 -->
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                ádfasdfasfasdfsadfsdf.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- /////////////////////////////////////////////
+//UNIVERSE////////////////////////////////////////
+////////////////////////////////////////////// -->
+<!-- key6 -->
+<section class="foxv-section foxv-section-collection">
+    <div class="foxv">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="niverse-cover-item">
+                        <div class="foxv-title">
+                            <h2 class="foxv-h2 foxv-h2-product">
+                                <a id="ctl00_cphMain_ctl00_SanPhamHot_mnCap" class="foxv-a foxv-a-title-list foxv-a-title-list-collection" href="/vi/san-pham-hot" target="_self">Sản phẩm hot</a>
+                            </h2>
+                        </div>
+                        <div class="foxv-cover foxv-cover-product-collection">
+                            <a href="/templates/womens-fashion.html" target="_self">
+                                <img src="/app/static/img/foxv-cover-01.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="foxv-title">
+                    <h2 class="foxv-h2 foxv-h2-product">
+                        <a class="foxv-a foxv-a-title-list foxv-a-title-list-collection" href="/vi/san-pham-hot" target="_self">Bộ sưu tập</a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- foxv-grid-item-1 -->
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="foxv-grid-item foxv-grid-item-list-product-group foxv-item-collection">
+                        <div class="foxv-figure foxv-figure-product foxv-figure-product-collection">
+                            <a href="/templates/womens-fashion.html" target="_self">
+                                <img class="img-fluid" src="/app/static/img/foxv-card-D31052.jpg" alt="ĐẦM NHUNG CAO CẤP D31052">
+                            </a>
+                        </div>
+                        <div class="foxv-des-group foxv-des-group-product">
+                            <div class="foxv-title foxv-title-product foxv-title-product-collection">
+                                <a class="foxv-a foxv-a-title-product" href="/templates/womens-fashion.html" target="_self" title="product-collection-name-01">
+                                    <h3 class="foxv-h3 foxv-h3-product">product-collection-name-01</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- foxv-grid-item -->
+                </div>
+                <!-- foxv-grid-item-2 -->
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="foxv-grid-item foxv-grid-item-list-product-group foxv-item-collection">
+                        <div class="foxv-figure foxv-figure-product foxv-figure-product-collection">
+                            <a href="/templates/womens-fashion.html" target="_self">
+                                <img class="img-fluid" src="/app/static/img/foxv-card-D27022.jpg" alt="ĐẦM NHUNG CAO CẤP D31052">
+                            </a>
+                        </div>
+                        <div class="foxv-des-group foxv-des-group-product">
+                            <div class="foxv-title foxv-title-product foxv-title-product-collection">
+                                <a class="foxv-a foxv-a-title-product" href="/templates/womens-fashion.html" target="_self" title="product-collection-name-02">
+                                    <h3 class="foxv-h3 foxv-h3-product">product-collection-name-02</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- foxv-grid-item -->
+                </div>
+                <!-- foxv-grid-item-3 -->
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="foxv-grid-item foxv-grid-item-list-product-group foxv-item-collection">
+                        <div class="foxv-figure foxv-figure-product foxv-figure-product-collection">
+                            <a href="/templates/womens-fashion.html" target="_self">
+                                <img class="img-fluid" src="/app/static/img/foxv-card-D28189.jpg" alt="ĐẦM NHUNG CAO CẤP D31052">
+                            </a>
+                        </div>
+                        <div class="foxv-des-group foxv-des-group-product">
+                            <div class="foxv-title foxv-title-product foxv-title-product-collection">
+                                <a class="foxv-a foxv-a-title-product" href="/templates/womens-fashion.html" target="_self" title="product-collection-name-03">
+                                    <h3 class="foxv-h3 foxv-h3-product">product-collection-name-03</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- foxv-grid-item -->
+                </div>
+                <!-- foxv-grid-item-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="foxv-grid-item foxv-grid-item-list-product-group foxv-item-collection">
+                        <div class="foxv-figure foxv-figure-product foxv-figure-product-collection">
+                            <a href="/templates/womens-fashion.html" target="_self">
+                                <img class="img-fluid" src="/app/static/img/foxv-card-AK28139.jpg" alt="ĐẦM NHUNG CAO CẤP D31052">
+                            </a>
+                        </div>
+                        <div class="foxv-des-group foxv-des-group-product">
+                            <div class="foxv-title foxv-title-product foxv-title-product-collection">
+                                <a class="foxv-a foxv-a-title-product" href="/templates/womens-fashion.html" target="_self" title="product-collection-name-04">
+                                    <h3 class="foxv-h3 foxv-h3-product">product-collection-name-04</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- foxv-grid-item -->
+                </div>
+            </div><!--row-->
+        </div><!--container-->
+    </div><!-- foxv -->
+</section>
+
+{% endblock %}

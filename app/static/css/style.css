@@ -18,7 +18,7 @@
     justify-content: space-between;
 }
 .foxv-form-field {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     /* padding: 0 3rem 0 3rem; */
 }
 .foxv-form-divided {
@@ -788,32 +788,50 @@ footer {
 
 }
 
-.v3-animation-fade-in {
-	opacity: 1;
-	animation-name: animationFadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-	animation-duration: 0.4s;
-}
+.foxv-animation-fade-in {
+    animation: animationFadeIn .5s;
+    -webkit-animation: animationFadeIn .5s;
+    -moz-animation: animationFadeIn .5s;
+    -o-animation: animationFadeIn .5s;
+    -ms-animation: animationFadeIn .5s;
+  }
 
-@keyframes animationFadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
+  @keyframes animationFadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes animationFadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes animationFadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes animationFadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes animationFadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
-.foxv-animation-panel-right {
-    animation: animationPanelRight 0.4s forwards;
+.foxv-animation-panel {
+    animation: animationPanel .5s forwards ease-out;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
-@keyframes animationPanelRight {
+@keyframes animationPanel {
     0% {
+        opacity: .6;
         transform: translate3d(60vw,0,0);
     }
     100% {
+        opacity: 1;
         transform: translate3d(0,0,0);
     }
     

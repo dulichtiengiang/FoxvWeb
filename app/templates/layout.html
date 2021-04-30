@@ -12,7 +12,7 @@
     <script src="{{ url_for('static', filename='font-awesome/all.js') }}"></script>
     <script src="{{ url_for('static', filename='js/jquery-3.5.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap413.js') }}"></script>
-    <script src="{{ url_for('static', filename='main/js/main.js') }}"></script>
+    <script src="{{ url_for('main.static', filename='main/js/main.js') }}"></script>
 </head>
 <body>
 <!-- HEADER -->
@@ -61,7 +61,7 @@
         <div class="row">
             <div class="col-12">
                 <nav class="navbar navbar-expand-lg navbar-light foxv-main-color">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#foxv-navbar-content" aria-controls="foxv-navbar-contentt" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#foxv-navbar-content" aria-controls="foxv-navbar-content" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="nav-brand logo-brand" href="{{url_for('main.index')}}">Foxv Boutique</div>
@@ -170,7 +170,7 @@
 </div><!-- nav-menu -->
 <!-- !NAVIGATION -->
 
-{% block body %} {% endblock %}
+{% block content %} {% endblock content %}
 </body>
 <footer>
     <div class="footer-blocks">
